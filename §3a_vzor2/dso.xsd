@@ -1,0 +1,66 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+<xs:element name="xml">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="dso">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="nazev" type="xs:string"/>
+<xs:element name="cislo" type="xs:unsignedByte"/>
+<xs:element name="ico" type="xs:unsignedInt"/>
+<xs:element name="spisova_znacka" type="xs:string"/>
+<xs:element name="poradove_cislo" type="xs:string"/>
+<xs:element name="url" type="xs:string"/>
+<xs:element name="sidlo_ulice_a_cp_c_or_" type="xs:string"/>
+<xs:element name="sidlo_psc" type="xs:unsignedShort"/>
+<xs:element name="sidlo_mesto" type="xs:string"/>
+<xs:element name="vznik" type="xs:date"/>
+<xs:element name="zanik"/>
+<xs:element name="den_zruseni"/>
+<xs:element name="pravni_duvod_zruseni"/>
+<xs:element name="predmet" type="xs:string"/>
+<xs:element name="clenove">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="item">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="nazev" type="xs:string"/>
+<xs:element name="iczuj" type="xs:unsignedInt"/>
+<xs:element name="okres" type="xs:string"/>
+<xs:element name="orp" type="xs:string"/>
+<xs:element name="ico" type="xs:unsignedInt"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="organy" type="xs:string"/>
+<xs:element name="vedeni_popis" type="xs:string"/>
+<xs:element name="vedeni">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="item">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="jmeno" type="xs:string"/>
+<xs:element name="prijmeni" type="xs:string"/>
+<xs:element name="funkce" type="xs:string"/>
+<xs:element name="od" type="xs:date"/>
+<xs:element name="do"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="prilohy" type="xs:string"/>
+</xs:sequence>
+<xs:attribute name="id" type="xs:unsignedByte" use="required"/>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
