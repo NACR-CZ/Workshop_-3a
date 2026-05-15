@@ -20,7 +20,7 @@ Popis obsahu pomocných metadatových souborů:
 
 •	description.txt popis vlastního systému: např. sloužil k evidenci rozličných entit
 
-•	list.txt, který obsahuje seznam tabulek, kódování, oddělovače atd. (šablonu lze v případě zájmu vyžádat)
+•	list.xml (lze využít i starší variantu list.txt), který obsahuje seznam tabulek, kódování, oddělovače atd. (šablonu lze v případě zájmu vyžádat)
 
 •	createdb.sql, je soubor kterým se vytvoří databáze, a tu bude možné tabulkami strojově naplnit. Tedy soubor createdb.sql bude obsahovat příkazy pro vytvoření všech tabulek, jejich sloupců vč. datových typů.
 
